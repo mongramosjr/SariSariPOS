@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/payment_top_content"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:background="#EEEDEB"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/payment_validate"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_margin="0dp"
+            android:drawableRight="@drawable/ic_double_angle_pointing_to_right"
+            android:text="Next Order"
+            android:textAllCaps="false"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentEnd="true"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/payment_top_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="#EEEDEB">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+
+        <include
+            layout="@layout/print_receipt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

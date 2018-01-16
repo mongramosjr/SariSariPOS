@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/subwindow_separator">
+
+    <include
+        layout="@layout/point_of_sale_subwindow_order"
+        android:layout_width="440dp"
+        android:layout_height="match_parent"/>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/subwindow_separator"
+        android:layout_above="@+id/subwindow_pad"
+        android:background="@color/UbuntuOrange" android:layout_width="match_parent" android:layout_height="3dp"/>
+
+    <include
+        android:id="@+id/subwindow_pad"
+        layout="@layout/point_of_sale_subwindow_pad"
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

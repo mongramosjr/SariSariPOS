@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="UbuntuOrange">#E95420</color>
+    <color name="LightAubergrine">#77216F</color>
+    <color name="CanonicalAubergrine">#772953</color>
+    <color name="MidAubergrine">#5E2750</color>
+    <color name="DarkAubergrine">#2C001E</color>
+    <color name="DarkAubergrine90">#411934</color>
+    <color name="DarkAubergrine80">#56334B</color>
+
+    <color name="WarmGrey">#AEA79F</color>
+    <color name="CoolGrey">#333333</color>
+    <color name="TextGrey">#111111</color>
+
+    <color name="WarmGrey80">#BEB8B2</color>
+    <color name="WarmGrey60">#CECAC5</color>
+    <color name="WarmGrey50">#D6D3CF</color>
+    <color name="WarmGrey40">#DEDBD8</color>
+    <color name="WarmGrey20">#EEEDEB</color>
+
+    <color name="colorPrimary">@color/CanonicalAubergrine</color>
+    <color name="colorPrimaryDark">@color/DarkAubergrine</color>
+    <color name="colorAccent">@color/UbuntuOrange</color>
+
+
+    <color name="navigationBarColor">#16000f</color>
+</resources>

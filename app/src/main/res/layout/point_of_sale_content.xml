@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/point_of_sale_left_pane"
+        android:layout_width="440dp"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/pane_separator"
+        android:background="@color/CoolGrey"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"/>
+
+    <include
+        layout="@layout/point_of_sale_right_pane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

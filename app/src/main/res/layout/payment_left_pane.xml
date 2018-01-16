@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEDEB">
+
+        <Button
+            android:id="@+id/set_customer"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_margin="0dp"
+            android:text="Cash (PHP)"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+
+</RelativeLayout>

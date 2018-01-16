@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/payment_top_content"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:background="#EEEDEB"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/payment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_margin="0dp"
+            android:drawableLeft="@drawable/ic_double_left_chevron"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/payment_validate"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_margin="0dp"
+            android:drawableRight="@drawable/ic_double_angle_pointing_to_right"
+            android:text="Validate"
+            android:textAllCaps="false"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentEnd="true"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/payment_top_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="#EEEDEB">
+
+        <include
+            layout="@layout/payment_left_pane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+        <include
+            layout="@layout/payment_right_pane"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

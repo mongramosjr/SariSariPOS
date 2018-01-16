@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/set_customer"
+        android:layout_width="186dp"
+        android:layout_height="54dp"
+        android:layout_margin="0dp"
+        android:drawableLeft="@drawable/ic_round_account_button_with_user_inside"
+        android:text="Customer"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_pay"
+        android:layout_width="186dp"
+        android:layout_height="162dp"
+        android:layout_margin="0dp"
+        android:drawablePadding="0dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="48dp"
+        android:drawableTop="@drawable/ic_right_arrow_in_black_circular_button"
+        android:text="Payment"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold" />
+
+</LinearLayout>
